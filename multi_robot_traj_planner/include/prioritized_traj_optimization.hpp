@@ -37,12 +37,16 @@
 #include <mission.hpp>
 #include <param.hpp>
 
+#define HAVE_CSTDDEF
+
 #include "com_fun.h"
 #include "optimization.h"
 #include "time.h"
 #include <cppad/cppad.hpp>
 #include <cppad/ipopt/solve.hpp>
 #include <eigen3/Eigen/Core>
+
+#undef HAVE_CSTDDEF
 
 using CppAD::AD;
 
